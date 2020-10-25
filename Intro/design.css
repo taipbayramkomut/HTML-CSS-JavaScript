@@ -24,6 +24,23 @@ div {
     margin: auto;
 }
 
+/* Küçük resimler bölümü    */
+nav{
+    display: table-cell;
+    width: 25%;
+    padding: 20px 50px 25px 50px;
+}
+
+/*  Ana resim bölümü    */
+iframe{
+    display: table-cell;
+    width: 75%;
+    /* Ana resimdeki oluşan kenarlığı kaldırır  */
+    border: none; 
+    overflow: hidden;
+    padding: 30px 50px 20px 0px;
+}
+
 /* Class Selectors  */
 
 /* Bu class selector tablo formatında kullanmak içindir.*/
@@ -43,8 +60,12 @@ div {
     margin-top: 15px; 
 }
 
-/*Girişteki resimler sıralandığı büyük bölüm*/
+/*  Girişteki resimler sıralandığı büyük bölüm    */
 .second_section{
+    /* Resimleri dikey olarak sıralamayı sağlar.    */
+    display: flex;
+    align-items: flex;
+
     height: 65%;
     margin-top: 25px;
     margin-bottom: 5px;
