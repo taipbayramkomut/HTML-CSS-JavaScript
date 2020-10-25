@@ -1,0 +1,80 @@
+/*  Taip Bayram KOMUT */
+
+/*  Type Selectors    */
+
+/* Sitenin ilk önce içerik kısmını full genişletiyoruz. */
+body{
+    position: absolute;
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+    /* Site arkaplan resmi ayarlama */
+    background-image: url("kapak\ resmi.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Sitenin ortadaki kısmı, asıl içerik kısmı */
+div {
+    width: 60%;
+    height: 90%;
+    /*İçerik kısmını ortalıyoruz.*/
+    margin: auto;
+}
+
+/* Class Selectors  */
+
+/* Bu class selector tablo formatında kullanmak içindir.*/
+.table_format{
+    display: table;
+    background-color: salmon;
+    /*  İki tablonun border özellikleri   */
+    border-style: solid;
+    border-width: 2px;
+    border-color: tomato;
+    border-radius: 10px;
+}
+
+/*  İlk girişteki küçük başlık bölümü */
+.first_section{
+    height: 20%;
+    margin-top: 15px; 
+}
+
+/*Girişteki resimler sıralandığı büyük bölüm*/
+.second_section{
+    height: 65%;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+/*  Türkiye Tanıtım yazısının geçtiği kısmı   */
+.header_cell{
+    display: table-cell;
+    /*  Normal div'in özelliklerini override ediyoruz. */
+    width: 50%;
+    height: 20%;    /*  first_section için height yine %20 olmalı çünkü ana kapsayıcısı hala div!  */
+    margin: initial;
+    /* Yazı tipi ayarlamaları.  */
+    font-size: 1.5em;
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /*  Yazı konum ayarlaması   */
+    text-align: center;
+    padding-top: 5%;
+}
+
+
+/*  Türkiye Turizm logosu kısmı   */
+.logo_cell{
+    display: table-cell;
+    /*  Normal div'in özelliklerini override ediyoruz. */
+    width: 50%;
+    height: 20%;    /*  first_section için height yine %20 olmalı çünkü ana kapsayıcısı hala div!  */
+    margin: initial;
+    /*  Yazı konum ayarlaması   */
+    vertical-align: middle;
+    padding-left: 10%;
+}
